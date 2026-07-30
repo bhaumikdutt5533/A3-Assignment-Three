@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "Koam_Seng";
+  src: url(./Fonts/Koam\ Seng.ttf);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./Fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins_Thin";
+  src: url(./Fonts/Poppins-Thin.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  /* height: 6%; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 4;
+  padding: 5px;
+  gap: 5%;
+}
+
+nav img {
+  height: 20px;
+}
+
+main nav h2 {
+  color: white;
+}
+
+#menu-bar {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 5;
+}
+
+#menu-bar::before {
+  content: "";
+  height: 100%;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: -5;
+  background: linear-gradient(#fff4b0, #f4d76a, #d9a93a);
+}
+
+#menu-bar .nav-links h3 {
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+}
+.nav-links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+#menu-bar h3 span i {
+  color: orange;
+  margin-left: 5px;
+}
+
+.icon {
+  height: 100%;
+  width: 10%;
+  font-size: 30px;                
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  gap: 11%;
+}
+
+.icon .insta{
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.icon .telegram{
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.icon .discord{
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.hero {
+  height: 94%;
+  width: 100%;
+  background-image: url(./photos/background.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 9%;
+  position: relative;
+  clip-path: ellipse(100% 100% at top);
+  z-index: 2;
+}
+
+.heading1 {
+  height: 19%;
+  width: 21%;
+}
+
+.heading1 h1 {
+  font-family: koam_Seng;
+  font-size: 90px;
+  color: white;
+}
+
+.heading1 h3 {
+  font-family: Poppins;
+  font-weight: 200;
+  font-size: 15px;
+  color: white;
+}
+
+.heading2 {
+  height: 19%;
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading2 h1 {
+  font-family: koam_Seng;
+  font-size: 90px;
+  color: white;
+}
+
+.heading2 h3 {
+  font-family: Poppins;
+  font-weight: 200;
+  font-size: 15px;
+  color: white;
+}
+
+#character {
+  height: 70%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+#character img {
+  height: 100%;
+}
+
+#text_btn {
+  height: 5%;
+  width: 9%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top: 70%;
+  left: 45%;
+  position: absolute;
+}
+
+#text_btn button {
+  height: 100%;
+  width: 100%;
+  font-family: Poppins;
+  background: linear-gradient(#fff4b0, #f4d76a, #d9a93a);
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.content {
+  height: 57%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./photos/bg.png);
+  background-size: cover;
+  clip-path: ellipse(100% 100% at center bottom);
+  transform: translate(0%, -40%);
+}
+
+.content img {
+  height: 60px;
+  width: 900px;
+  transform: translate(0%, 250%);
+}
+.content h1 {
+  font-family: Koam_Seng;
+  font-size: 30px;
+  color: white;
+  transform: translate(0%, 500%);
+}
+.paragraph {
+  height: 40%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  transform: translate(0%, 50%);
+}
+
+.paragraph p {
+  width: 99%;
+  font-family: Poppins_Thin;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.content .link {
+  height: 10px;
+  top: 85%;
+  position: absolute;
+}
+
+.content .link a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}

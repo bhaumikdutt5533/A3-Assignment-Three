@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url(img1.jpg);
+    background-size: cover;
+}
+
+#headBar{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+nav{
+    margin-right: 20px;
+}
+
+#btn{
+    height: 30px;
+    width: 70px;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.161);
+    color: white;
+    border: 1.2px solid rgba(0, 0, 0, 0.472);
+    border-radius: 20px;
+
+}
+
+#btn:hover{
+    background-color: rgba(255, 255, 255, 0.052);
+    border-color: rgb(0,0,0,0.274);
+}
+
+main{
+    height: 70%;
+    width: 100%;
+}
+
+h1{
+    color: white;
+    margin-left: 60px;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: oblique;
+    margin-top: 15px;
+}
+
+#box{
+    width: 100%;
+    padding: 40px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.card{
+    width: 85%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.134);
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#photo{
+    height: 70%;
+    width: 90%;
+    border-radius: 30px;
+    object-fit: cover;
+    border: 2.5px solid rgba(249, 247, 247, 0.56); 
+
+}
+
+#info{
+    height: 8%;
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    border-radius: 30px;
+}
+#info{
+    width:90%;
+    margin:10px auto;
+}
+
+h3{
+    font-weight: 200;
+    color: white;
+}
+
+h4{
+    color: white;
+    font-weight: 200;
+}
+
+#info_btn{
+    height: 10%;
+    width: 90%;
+    margin: 8px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    height: 40px;
+    width: 160px;
+    font-size: 16px;
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white    ;
+    border: 2.5px solid rgba(249, 247, 247, 0.199);
+    border-radius: 20px;  
+    font-weight: 400; 
+}
+
+button:hover{
+    background-color: rgba(113, 39, 152, 0.42);
+    border-color: rgb(0,0,0,0.274);
+}
+
+#box a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
